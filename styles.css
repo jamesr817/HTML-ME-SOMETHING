@@ -1,0 +1,25 @@
+body{
+    background-color: black
+}
+
+.titleHeading{
+    color: blue;
+    font-size : 40px
+}
+
+.headings{
+    color: blue;
+    font-size : 26px
+}
+
+p{
+    color: red;
+    font-size: 20px;
+    
+}
+
+
+
+.captions{
+    color: white
+}
