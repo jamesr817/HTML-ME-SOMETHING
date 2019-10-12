@@ -1,7 +1,13 @@
 body{
     background-color: black;
     margin-left: 20px;
+    margin-right: 20px
 }
+
+*{
+    box-sizing: border-box;
+}
+
 
 #title{
     color: blue;
@@ -25,3 +31,24 @@ p{
 .captions{
     color: white
 }
+
+.wall {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
+    }
+    
+    .wallContainer1 { grid-area: 1 / 1 / 2 / 2; }
+    .wallContainer2 { grid-area: 1 / 2 / 2 / 3; }
+    .wallContainer3 { grid-area: 1 / 3 / 2 / 4; }
+    .wallContainer4 { grid-area: 1 / 4 / 2 / 5; }
+    .wallContainer5 { grid-area: 2 / 1 / 3 / 2; }
+    .wallContainer6 { grid-area: 2 / 2 / 3 / 3; }
+    .wallContainer7 { grid-area: 2 / 3 / 3 / 4; }
+    .wallContainer8 { grid-area: 2 / 4 / 3 / 5; }
+    .wallContainer9 { grid-area: 3 / 1 / 4 / 2; }
+    .wallContainer10 { grid-area: 3 / 2 / 4 / 3; }
+    .wallContainer11 { grid-area: 3 / 3 / 4 / 4; }
+    .wallContainer12 { grid-area: 3 / 4 / 4 / 5; }
