@@ -1,37 +1,84 @@
 body{
     background-color: black;
-    margin-left: 20px;
-    margin-right: 20px
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6em;
+    margin: 0;
 }
 
-*{
-    box-sizing: border-box;
+article{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
 }
 
+header{
+    line-height: .5em;
+    margin: 20px;
+    padding: 10px;
+}
 
-#title{
+#h-title{
     color: blue;
-    font-size : 40px
+    font-size : 40px;
+    text-align: center;
+}
+
+h2{
+    color: red;
+    font-size : 30px;
+    text-align: center;
 }
 
 .headings{
     color: blue;
     font-size : 26px;
+    text-align: center;
+    text-decoration: underline;
 
 }
 
 p{
     color: red;
-    font-size: 20px;
+    font-size: 16px;
     text-indent: 20px
 }
 
-
-
 .captions{
-    color: white
+    color: white;
+    font-style: italic;
+    font-size: 12px;
 }
 
+.box-1{
+    /* border: 3px hidden; */
+    padding: 20px;
+    /* max-width: 640px; */
+}
+.box-1__img{
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box-1__text{
+    display: inline-block;
+    width: 46%;
+}
+@media(max-width: 720px) {
+    .box-1__text{
+        width: 100%;
+    }
+}
+
+
+.row{
+    display: flex;
+}
+.column{
+    flex: 33.33%;
+    padding: 5px;
+}
 .wall {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -52,3 +99,4 @@ p{
     .wallContainer10 { grid-area: 3 / 2 / 4 / 3; }
     .wallContainer11 { grid-area: 3 / 3 / 4 / 4; }
     .wallContainer12 { grid-area: 3 / 4 / 4 / 5; }
+
